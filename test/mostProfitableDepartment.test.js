@@ -19,4 +19,10 @@ describe('The mostProfitableDepartment' , function(){
 ];
         assert.deepEqual(mostProfitableDepartment(salesData), 'outdoor');
     });
+
+    it('should not calculate if a non-object is entered' , function(){
+
+        assert.deepEqual(mostProfitableDepartment('banele'), 'not an object');
+    });
+
 });

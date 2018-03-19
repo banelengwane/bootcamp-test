@@ -15,5 +15,4 @@ function findItemsOver(objList, threshold){
   }else{
     return 'That was not an object';
   }
-
 }
