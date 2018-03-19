@@ -37,7 +37,6 @@ var mostProfitableDepartment = function(sales){
       newObj.push({depName, depProfit});
     }
 
-    {department : 'hardware', sales: 12000}
     //console.log(newObj);
 
     var count = 0;
