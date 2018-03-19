@@ -19,4 +19,8 @@ describe('The findItemsOver' , function(){
         ];
         assert.deepEqual(findItemsOver(myObj, 'banele'), 'invalid threshold');
     });
+
+    it('should also tell when the object is invalid' , function(){
+        assert.deepEqual(findItemsOver(), 'That was not an object');
+    });
 });

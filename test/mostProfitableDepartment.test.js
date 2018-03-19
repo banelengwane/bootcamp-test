@@ -1,5 +1,5 @@
 describe('The mostProfitableDepartment' , function(){
-    it('should calculate and return items over a given threshold' , function(){
+    it('should accept an object and calculate the most profitable department' , function(){
       var salesData = [
   {department : 'hardware', sales : 4500, day : 'Monday'},
   {department : 'outdoor', sales : 1500, day : 'Monday'},
