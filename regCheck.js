@@ -1,11 +1,16 @@
 var regCheck = function (carReg, prefix){
-  if (typeof carReg === 'string' && typeof prefix === 'string'){
-    if(carReg.endsWith(prefix)){
-      return true;
-    }else{
-      return false;
+  if (typeof carReg === 'string' || typeof carReg === 'string'){
+    if (typeof prefix === 'string' || typeof prefix === 'string'){
+      if(carReg.endsWith(prefix)){
+        return true;
+      }else{
+        return false;
+      }
+    }else {
+      return 'the prefix is invalid'
     }
+
   }else{
-    return 'carReg / prefix is not a string'
+    return 'the car registrations is / are invalid';
   }
 }

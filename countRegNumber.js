@@ -1,6 +1,9 @@
-describe('The countRegNumber function' , function(){
-    it('should returns the number of registration numbers in the string.' , function(){
-        assert.equal(countRegNumber('CA 182736,CJ 123'), 2);
-        assert.equal(countRegNumber('CA 1234,CY 12345,CL 1'), 3)
-    });
-});
+var countRegNumber = function (myStr){
+  if(typeof myStr === 'string' || myStr instanceof String){
+    var theSplit = myStr.split(","); // splitting myStr
+    var len = theSplit.length; //counting the number of strings after the split
+    return len; //returning the total number of registrations
+  }else {
+    return 'The registrations are invalid'
+  }
+}
